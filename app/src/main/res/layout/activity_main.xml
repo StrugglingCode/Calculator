@@ -27,21 +27,22 @@
                     android:text="Button"
                     android:layout_width="wrap_content"
                     android:layout_height="35pt" android:id="@+id/button25" android:visibility="invisible"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" android:layout_marginRight="2pt" android:padding="1pt"/>
             <Button
                     android:text="Button"
                     android:layout_width="wrap_content"
                     android:layout_height="35pt" android:id="@+id/button24" android:visibility="invisible"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" android:layout_marginRight="2pt" android:padding="1pt"/>
             <Button
                     android:text="Button"
                     android:layout_width="wrap_content"
                     android:layout_height="35pt" android:id="@+id/button23" android:visibility="invisible"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" android:layout_marginRight="2pt" android:padding="1pt"/>
             <Button
                     android:text="/"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnDivide" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnDivide" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
@@ -49,37 +50,45 @@
             <Button
                     android:text="7"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn7" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn7" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="8"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn8" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn8" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="9"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn9" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn9" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="*"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnMultiply" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnMultiply" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
                     android:text="4"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn4" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn4" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="5"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn5" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn5" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="6"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn6" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn6" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="-"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnMinus" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnMinus" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
@@ -87,19 +96,23 @@
             <Button
                     android:text="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn1" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn1" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="2"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn2" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn2" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="3"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn3" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn3" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="+"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnAddition" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnAddition" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
@@ -107,19 +120,23 @@
             <Button
                     android:text="0"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btn0" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btn0" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="buttonIsTapped"/>
             <Button
                     android:text="C"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnC" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnC" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
             <Button
                     android:text="="
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnEquals" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnEquals" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
             <Button
                     android:text="%"
                     android:layout_width="wrap_content"
-                    android:layout_height="35pt" android:id="@+id/btnPercentage" android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/btnPercentage" android:layout_weight="1"
+                    android:layout_marginRight="2pt" android:padding="1pt" android:onClick="operatorIsTapped"/>
         </TableRow>
     </TableLayout>
 
