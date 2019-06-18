@@ -45,7 +45,21 @@ class MainActivity : AppCompatActivity() {
 
                  R.id.btnDivide ->
             {
+                                 operatorIsTapped(Operator.DIVIDE)
+            }
 
+            R.id.btnAddition ->
+            {
+                operatorIsTapped(Operator.PLUS)
+            }
+
+            R.id.btnMultiply ->
+            {
+                operatorIsTapped(Operator.MULTIPLY)
+            }
+            R.id.btnMinus ->
+            {
+                operatorIsTapped(Operator.MINUS)
             }
         }
     }
@@ -78,5 +92,12 @@ class MainActivity : AppCompatActivity() {
 
               }
        }
+        else
+       {
+           stringAtLEft = currentNumber
+           currentNumber = ""
+
+       }
+        currentOperator = tappedOperator
     }
 }
