@@ -7,13 +7,23 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    //instance Variable
+   //instance Variable
     private var currentNumber:String? = null
+    private var currentOperator:Operator? = null
+    private var stringAtLEft:String? = null
+    private var stringAtRight:String? = null
+    private var calculationResult:Int = 0
+
+    private  enum class Operator
+    {
+        PLUS,MULTIPLY,DIVIDE,MINUS,EQUAL
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         addNumber.isEnabled = false
         addNumber.inputType = InputType.TYPE_NULL
+        currentNumber = ""
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
@@ -32,6 +42,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.btn7 -> numberIsTapped(7)
                 R.id.btn8 -> numberIsTapped(8)
                 R.id.btn9 -> numberIsTapped(9)
+
+                 R.id.btnDivide ->
+            {
+
+            }
         }
     }
 
@@ -39,5 +54,29 @@ class MainActivity : AppCompatActivity() {
     {
          currentNumber += tappedNumber.toString()
         addNumber.setText(currentNumber)
+    }
+
+    private fun  operatorIsTapped(tappedOperator : Operator)
+    {
+       if (currentOperator!= null)
+       {
+              if(currentNumber!= null)
+              {
+                     stringAtRight = currentNumber
+                     currentNumber = ""
+
+                  when(currentOperator)
+                  {
+                      Operator.PLUS -> calculationResult  = Integer.parseInt(stringAtLEft)+Integer.parseInt(stringAtRight)
+                      Operator.MINUS -> calculationResult = Integer.parseInt(stringAtLEft) - Integer.parseInt(stringAtRight)
+                      Operator.DIVIDE -> calculationResult = Integer.parseInt(stringAtLEft) / Integer.parseInt(stringAtRight)
+                      Operator.MULTIPLY-> calculationResult = Integer.parseInt(stringAtLEft) * Integer.parseInt(stringAtRight)
+                  }
+                  stringAtLEft = calculationResult.toString()
+
+                  addNumber.setText(calculationResult.toString())
+
+              }
+       }
     }
 }
